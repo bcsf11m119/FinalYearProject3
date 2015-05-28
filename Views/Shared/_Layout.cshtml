@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Design by http://www.bluewebtemplates.com
+Released for free under a Creative Commons Attribution 3.0 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Parental Control</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="~/content/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+    <!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+    <script type="text/javascript" src="~/Scripts/cufon-yui.js"></script>
+    <script type="text/javascript" src="~/Scripts/arial.js"></script>
+    <script type="text/javascript" src="~/Scripts/cuf_run.js"></script>
+    <script src="~/Scripts/cuf_run.js"></script>
+    <script src="~/Scripts/cufon-yui.js"></script>
+    <script src="~/Scripts/arial.js"></script>
+    <!-- CuFon ends -->
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+
+
+<body>
+
+    <div class="main">
+
+        <div class="header" style="background-color:black">
+            <div class="header_resize">
+                <div class="menu_nav">
+                    <ul>
+                        <li class="active"><a href="/Home/Index">Home</a></li>
+                        <li><a href="/Home/Support">Support</a></li>
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="/Home/Contact">Contact Us</a></li>
+                        <li> <a href="/Account/Login">Login</a></li>
+                        <li><a>Sign up</a></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+                <div class="logo"><h1><a href="index.html">Parental Control<br /><small>Secure your Child</small></a></h1></div>
+
+                @*<div class="mainbar"><h1><a href="index.html">Parental Control<br /><small>Secure your Child</small></a></h1></div>*@
+            </div>
+        </div>
+    </div>
+
+    <br />
+        @RenderBody()
+        @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    <br />
+
+
+
+    <div class="footer">
+        <div class="footer_resize">
+            <p class="lf">&copy; Copyright MyWebSite. Designed by Blue <a href="http://www.bluewebtemplates.com">Website Templates</a></p>
+            <ul class="fmenu">
+                <li class="active"><a href="/Home/Index">Home</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+            <div class="clr"></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+
+
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/Scripts/cuf_run.js")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/Scripts")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/modernizr")
+
+    </head>
+    <body>
+
+        @RenderBody();
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+    </body>
+    @*<body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+    </body>
+
+</html>*@

@@ -1,0 +1,22 @@
+﻿@model List<WebApplicationFyp.Models.Child>
+@{
+    ViewBag.Title = "Verify";
+}
+
+<h2>Verify</h2>
+
+
+<h2>Selection</h2>
+<form action="/Account/Result" method="post">
+<select name="opt" >
+    @foreach (var s in @Model)
+    {
+        <option style="font-size:14px">
+            @s.Name
+        </option>
+    }
+
+</select>
+    <br />
+    <input type="submit" value="Submit" />
+</form>

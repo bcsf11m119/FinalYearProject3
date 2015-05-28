@@ -1,0 +1,71 @@
+﻿@model WebApplicationFyp.Models.Child
+@{
+    ViewBag.Title = "Result";
+    
+}
+
+<h2>Result</h2>
+
+<table border="1"  style="font-size:16px">
+    <thead style="font-size:20px">
+        Messages
+    </thead>
+    @foreach(var s in @Model.MessageLogs)
+    { 
+        <tr >
+            <td  colspan="6">@s.SenderName</td>
+            <td colspan="6"> @s.SenderNumber</td>
+            <td colspan="6">@s.Content</td>
+            <td colspan="6">@s.Time </td>
+        </tr>
+    }
+</table>
+
+<br />
+<table border="1" style="font-size:16px">
+    <thead style="font-size:20px">
+        Calls
+    </thead>
+    @foreach (var s in @Model.CallLogs)
+    {
+        <tr>
+            <td colspan="6">@s.CallerName</td>
+            <td colspan="6"> @s.CallerNumber</td>
+            <td colspan="6">@s.Duration</td>
+            <td colspan="6">@s.Time</td>
+            <td colspan="6">@s.Date</td>
+            
+        </tr>
+    }
+</table>
+<br />
+<table border="1" style="font-size:16px">
+    <thead style="font-size:20px">
+        Locations
+    </thead>
+    @foreach (var s in @Model.Locations)
+    {
+        <tr>
+            <td colspan="6">@s.Location1</td>
+            <td colspan="6"> @s.Date</td>
+            <td colspan="6">@s.Duration</td>
+            <td colspan="6">@s.Time</td>
+            
+        </tr>
+    }
+</table>
+<br />
+<table border="1" style="font-size:16px">
+    <thead style="font-size:20px">
+        Restricted Areas
+    </thead>
+    @foreach (var s in @Model.Restrictions)
+    {
+        <tr>
+            <td colspan="6">@s.RestrictedArea</td>
+            <td colspan="6">@s.RestrictedArea</td>
+            
+
+        </tr>
+    }
+</table>

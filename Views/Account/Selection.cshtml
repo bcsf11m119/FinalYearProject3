@@ -1,0 +1,22 @@
+﻿@model Array
+@{
+    ViewBag.Title = "Selection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+    
+}
+
+<h2>Selection</h2>
+<div class="col-lg-6">
+    </div>
+    <div class="col-lg-6">
+        <select>
+            @foreach (var s in ViewBag.x)
+            {
+                <option>
+                    @s.Name;
+                </option>
+            }
+
+        </select>
+    </div>
