@@ -32,7 +32,10 @@ namespace WebApplicationFyp.Controllers
         public IQueryable<ParentDTO> Get(int id)
         {
             var p = from x in db.Parents
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
                     //where x.Number.Equals(id.ToString())
                     where x.Pid==id
                     select new ParentDTO()
